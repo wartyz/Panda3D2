@@ -36,6 +36,6 @@ class MyGame(ShowBase):
         env = self.loader.loadModel("models/environment")
         env.reparentTo(self.render)
 
-
-game = MyGame()
-game.run()
+if __name__ == "__main__":
+    game = MyGame()
+    game.run()
